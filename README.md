@@ -4,3 +4,5 @@
 ![image2](https://github.com/Anand-Prakash78/django-crud/blob/main/static/imag/Screenshot%20(27).png)
 
 ![image3](https://github.com/Anand-Prakash78/django-crud/blob/main/static/imag/Screenshot%20(28).png)
+
+![image4](https://github.com/Anand-Prakash78/django-crud/blob/main/static/imag/Screenshot%20(29).png)
