@@ -1,0 +1,25 @@
+{% extends 'base.html' %}
+{% block content %}
+<div class="row">
+    <div class="col-3" style="background-color: burlywood;"></div>
+    {% if key1 %}
+    {% for i in key1 %}
+    <div class="col-6">
+        <h2>{{i.news_title}} </h2>
+        <p>Posted on : {{i.new_date}} </p>
+        <div><img src="{{i.news_image.url}}" alt="Path not found" ></div>
+        <div>{{i.news_description}} </div>
+
+    </div>
+
+    {% endfor %}
+    {% endif %}
+    <div class="col-3"style="background-color: burlywood;"></div>
+</div>
+
+
+
+
+
+
+{% endblock %}

@@ -1,0 +1,24 @@
+{% extends 'base.html' %}
+
+{% load static %}
+
+
+{% block content %}
+    {% if key1 %}
+    {% for i  in key1 %}  
+  
+    <div class="card" style="width: 18rem;">
+      <img src="{{i.news_image.url}}" class="card-img-top" alt="Path Not Found" id="news_image">
+      <div class="card-body" style="height:10rem;">
+        <h5 class="card-title">{{i.news_title}}</h5>
+      </div>     
+      <div class="card-body">
+        <a href="{{i.news_image.url}}" download class="card-link" >pdf </a>
+        <a href="{% url 'descriptionNews' title=i.news_title %}" class="card-link" > View News</a>
+      </div>
+    </div>
+   
+      {% endfor %}
+    {% endif %}
+
+   {% endblock %}
